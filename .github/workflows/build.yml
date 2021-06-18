@@ -29,7 +29,6 @@ jobs:
       - name: Lint project
         run: |
           npm run lint
-          - name: GitHub Pages
       - name: Deploy to GitHub Pages
         if: ${{ github.ref == 'refs/heads/master' && success() }}
         uses: crazy-max/ghaction-github-pages@v2
