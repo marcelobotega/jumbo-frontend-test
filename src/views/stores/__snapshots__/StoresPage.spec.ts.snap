@@ -2,6 +2,6 @@
 
 exports[`StoresPage.vue should create 1`] = `
 <div class="stores-page-wrapper">
-  <stores-stub></stores-stub>
+  <storeslist-stub></storeslist-stub>
 </div>
 `;
