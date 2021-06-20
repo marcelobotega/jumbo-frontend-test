@@ -1,5 +1,7 @@
 <template>
   <div>
+    <h1>Stores</h1>
+
     <button @click.prevent="show = 'stores'" class="btn btn-blue mr-8">
       Show stores
     </button>
@@ -16,7 +18,7 @@
 </template>
 
 <script lang="ts">
-import stores from "../data/stores-data";
+import stores from "../../data/stores-data";
 import { Component, Vue } from "vue-property-decorator";
 import { IStore } from "@/domain/store";
 

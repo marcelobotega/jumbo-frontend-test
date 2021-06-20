@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CitiesList.vue should create component with cities list ASC 1`] = `
+<div class="cities-list-wrapper content-section">
+  <h1>Cities</h1>
+  <div class="cities-list-content mt-4"><button class="btn btn-yellow btn-sm btn-icon"><span>Sort</span>
+      <!----> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 ml-3 fill-current">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"></path>
+      </svg>
+    </button>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>A</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>B</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>C</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>D</p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CitiesList.vue should toggle sort button 1`] = `
+<div class="cities-list-wrapper content-section">
+  <h1>Cities</h1>
+  <div class="cities-list-content mt-4"><button class="btn btn-yellow btn-sm btn-icon"><span>Sort</span> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 ml-3 fill-current">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"></path>
+      </svg>
+      <!---->
+    </button>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>D</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>C</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>B</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>A</p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CitiesList.vue should toggle sort button 2`] = `
+<div class="cities-list-wrapper content-section">
+  <h1>Cities</h1>
+  <div class="cities-list-content mt-4"><button class="btn btn-yellow btn-sm btn-icon"><span>Sort</span>
+      <!----> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-5 w-5 ml-3 fill-current">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"></path>
+      </svg>
+    </button>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>A</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>B</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>C</p>
+      </div>
+    </div>
+    <div class="overflow-hidden rounded border border-gray-300 mt-4">
+      <div class="px-3 py-2">
+        <p>D</p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
