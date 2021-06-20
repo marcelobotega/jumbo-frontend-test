@@ -8,23 +8,23 @@ exports[`CitiesList.vue should create component with cities list ASC 1`] = `
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"></path>
       </svg>
     </button>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>A</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>B</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>C</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>D</p>
       </div>
     </div>
@@ -40,23 +40,23 @@ exports[`CitiesList.vue should toggle sort button 1`] = `
       </svg>
       <!---->
     </button>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>D</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>C</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>B</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>A</p>
       </div>
     </div>
@@ -72,23 +72,23 @@ exports[`CitiesList.vue should toggle sort button 2`] = `
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4h13M3 8h9m-9 4h9m5-4v12m0 0l-4-4m4 4l4-4"></path>
       </svg>
     </button>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>A</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>B</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>C</p>
       </div>
     </div>
-    <div class="overflow-hidden rounded border border-gray-300 mt-4">
-      <div class="px-3 py-2">
+    <div class="card mt-3">
+      <div class="card-content">
         <p>D</p>
       </div>
     </div>

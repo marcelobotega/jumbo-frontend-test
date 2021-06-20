@@ -26,7 +26,7 @@ describe("CitiesList.vue", () => {
       getCitiesOrderedSpy.mockReturnValueOnce(citiesDescMock);
 
     const sortButton = wrapper.find("button.btn.btn-yellow");
-    sortButton.trigger("click");
+    await sortButton.trigger("click");
     await wrapper.vm.$nextTick();
     expect(getCitiesOrderedSpy).toHaveBeenCalledTimes(1);
     expect(getCitiesOrderedSpy).toHaveBeenCalledWith(false);
@@ -34,7 +34,7 @@ describe("CitiesList.vue", () => {
 
     getCitiesOrderedSpy =
       getCitiesOrderedSpy.mockReturnValueOnce(citiesAscMock);
-    sortButton.trigger("click");
+    await sortButton.trigger("click");
     await wrapper.vm.$nextTick();
     expect(getCitiesOrderedSpy).toHaveBeenCalledTimes(2);
     expect(getCitiesOrderedSpy).toHaveBeenCalledWith(false);

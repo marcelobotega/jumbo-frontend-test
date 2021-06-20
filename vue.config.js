@@ -1,5 +1,4 @@
 module.exports = {
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/jumbo-frontend-test/'
-    : '/'
-}
+  publicPath:
+    process.env.NODE_ENV === "production" ? "/jumbo-frontend-test/" : "/",
+};

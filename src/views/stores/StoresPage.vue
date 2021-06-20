@@ -1,16 +1,16 @@
 <template>
   <div class="stores-page-wrapper">
-    <Stores />
+    <StoresList />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import Stores from "@/components/stores/Stores.vue";
+import StoreList from "@/components/stores/StoreList.vue";
 
 @Component({
   components: {
-    Stores,
+    StoresList: StoreList,
   },
 })
 export default class StoresPage extends Vue {}

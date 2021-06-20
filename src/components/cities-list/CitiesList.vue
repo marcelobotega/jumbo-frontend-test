@@ -38,13 +38,9 @@
           />
         </svg>
       </button>
-      <div
-        class="overflow-hidden rounded border border-gray-300 mt-4"
-        v-for="city in cities"
-        :key="city"
-      >
-        <div class="px-3 py-2">
-          <p class="">{{ city }}</p>
+      <div class="card mt-3" v-for="city in cities" :key="city">
+        <div class="card-content">
+          <p>{{ city }}</p>
         </div>
       </div>
     </div>
