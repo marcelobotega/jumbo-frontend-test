@@ -2,6 +2,6 @@
 
 exports[`Home.vue should create home 1`] = `
 <div class="home">
-  <stores-stub></stores-stub>
+  <h1>Welcome</h1>
 </div>
 `;
