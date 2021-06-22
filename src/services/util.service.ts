@@ -14,4 +14,8 @@ export class UtilService {
       return a === b ? 0 : a ? 1 : -1;
     }
   }
+
+  static escapeRegexpCharacters(value: string): string {
+    return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
 }

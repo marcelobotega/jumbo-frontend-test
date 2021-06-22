@@ -1,6 +1,7 @@
 <template>
-  <div class="home">
+  <div class="home-wrapper content-section">
     <h1>Welcome</h1>
+    <p class="mt-1">Use the menu above to navigate through the system</p>
   </div>
 </template>
 

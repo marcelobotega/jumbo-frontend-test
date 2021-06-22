@@ -11,7 +11,7 @@ class StoreService {
     let storesList = stores;
 
     if (search) {
-      const escapedSearch = search.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const escapedSearch = UtilService.escapeRegexpCharacters(search);
 
       storesList = stores.filter(
         (item: IStore) =>

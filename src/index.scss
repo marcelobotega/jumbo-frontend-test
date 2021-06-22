@@ -82,6 +82,9 @@ body {
   .form-control-icon {
     @apply relative;
 
+    .form-control {
+      @apply pr-8;
+    }
     .form-icon {
       @apply absolute
       inset-y-0

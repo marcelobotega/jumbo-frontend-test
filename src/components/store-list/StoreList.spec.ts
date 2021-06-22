@@ -1,14 +1,7 @@
 import { mount, Wrapper } from "@vue/test-utils";
-import StoreList from "@/components/stores/StoreList.vue";
+import StoreList from "@/components/store-list/StoreList.vue";
 import storesService from "@/services/store.service";
-
-/**
- * Need to mock debounce because of lodash implementation.
- * found the fix here https://github.com/facebook/jest/issues/3465#issuecomment-351186130
- *
- *  FIXME JEST 26+ has a modern (jest.useFakeTimers('modern')) implementation of fake timers that should fix the issue
- */
-jest.mock("lodash/debounce", () => jest.fn((fn) => fn));
+import StoreAutocomplete from "@/components/store-autocomplete/StoreAutocomplete.vue";
 
 const storeOneMock = {
   city: "St. Nicolaasga",
@@ -52,7 +45,7 @@ const storeTwoMock = {
 
 describe("StoreList.vue", () => {
   let wrapper: Wrapper<StoreList>;
-  let getStoresOrderedSpy = jest.spyOn(storesService, "getStoresOrdered");
+  const getStoresOrderedSpy = jest.spyOn(storesService, "getStoresOrdered");
 
   beforeEach(() => {
     getStoresOrderedSpy.mockReturnValueOnce([storeOneMock, storeTwoMock]);
@@ -65,36 +58,16 @@ describe("StoreList.vue", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should use input and doSearch", async () => {
+  it("should create test", async () => {
     jest.resetAllMocks();
-    getStoresOrderedSpy = getStoresOrderedSpy.mockReturnValueOnce([
-      storeOneMock,
-    ]);
+    getStoresOrderedSpy.mockReturnValueOnce([storeTwoMock]);
 
-    const searchInput = wrapper.find("#search");
+    wrapper
+      .findComponent(StoreAutocomplete)
+      .vm.$emit("item-selected", "Jumbo St. Oedenrode Hertog Hendrikstraat");
 
-    (searchInput.element as HTMLInputElement).value =
-      "Jumbo St. Nicolaasga Jan Altenburg";
-
-    await searchInput.trigger("input");
     await wrapper.vm.$nextTick();
     expect(getStoresOrderedSpy).toHaveBeenCalledTimes(1);
-    expect(getStoresOrderedSpy).toHaveBeenCalledWith(
-      true,
-      "addressName",
-      "Jumbo St. Nicolaasga Jan Altenburg"
-    );
-    expect(wrapper).toMatchSnapshot();
-
-    getStoresOrderedSpy = getStoresOrderedSpy.mockReturnValueOnce([
-      storeTwoMock,
-    ]);
-    (searchInput.element as HTMLInputElement).value =
-      "Jumbo St. Oedenrode Hertog Hendrikstraat";
-
-    await searchInput.trigger("input");
-    await wrapper.vm.$nextTick();
-    expect(getStoresOrderedSpy).toHaveBeenCalledTimes(2);
     expect(getStoresOrderedSpy).toHaveBeenCalledWith(
       true,
       "addressName",
