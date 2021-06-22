@@ -35,4 +35,14 @@ describe("util.service.ts", () => {
       )
     ).toEqual([false, false, true, true]);
   });
+
+  it("should test escapeRegexpCharacters", () => {
+    expect(
+      UtilService.escapeRegexpCharacters(
+        ".*+this?^string${makes}no()sense|at[all]"
+      )
+    ).toEqual(
+      "\\.\\*\\+this\\?\\^string\\$\\{makes\\}no\\(\\)sense\\|at\\[all\\]"
+    );
+  });
 });
