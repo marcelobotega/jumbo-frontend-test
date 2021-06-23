@@ -7,7 +7,9 @@
       </div>
       <hr />
       <div v-if="stores.length === 0" class="mt-3">
-        <h4>Sorry we couldn't find any stores with your search term.</h4>
+        <p class="text-sm font-semibold mt-1">
+          Sorry we couldn't find any stores with your search term.
+        </p>
       </div>
       <div v-else>
         <StoreCard

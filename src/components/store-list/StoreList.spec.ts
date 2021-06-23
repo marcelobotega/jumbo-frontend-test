@@ -59,7 +59,7 @@ describe("StoreList.vue", () => {
   });
 
   it("should create test", async () => {
-    jest.resetAllMocks();
+    jest.clearAllMocks();
     getStoresOrderedSpy.mockReturnValueOnce([storeTwoMock]);
 
     wrapper
