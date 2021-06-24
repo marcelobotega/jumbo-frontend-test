@@ -2,8 +2,8 @@
   <div class="cities-list-wrapper content-section">
     <h1>Cities</h1>
     <div class="cities-list-content mt-4">
-      <div class="cities-list-filter">
-        <div class="form-group md:w-1/2 lg:w-1/4 sm:w-full">
+      <div class="cities-list-filter mb-3">
+        <div class="form-group md:w-1/2 lg:w-1/4 w-full">
           <div class="form-control-icon">
             <input
               placeholder="Search cities"
@@ -30,7 +30,7 @@
           </div>
         </div>
         <button
-          class="btn btn-yellow btn-sm btn-icon ml-3"
+          class="btn btn-yellow btn-sm btn-icon ml-0 md:ml-3 mt-2 md:mt-0"
           @click.prevent="toggleSort()"
         >
           <span>Sort</span>
@@ -66,6 +66,7 @@
           </svg>
         </button>
       </div>
+      <hr />
       <div v-if="cities.length === 0" class="mt-3">
         <p class="text-sm font-semibold mt-1">
           Sorry we couldn't find any city with your search term.
@@ -88,6 +89,7 @@ import { Component, Vue } from "vue-property-decorator";
 import citiesService from "@/services/cities.service";
 import _debounce from "lodash/debounce";
 import CityCard from "@/components/city-card/CityCard.vue";
+
 @Component({
   components: { CityCard },
 })
@@ -113,6 +115,6 @@ export default class CitiesList extends Vue {
 </script>
 <style scoped lang="scss">
 .cities-list-filter {
-  @apply flex items-center;
+  @apply flex items-center flex-wrap;
 }
 </style>

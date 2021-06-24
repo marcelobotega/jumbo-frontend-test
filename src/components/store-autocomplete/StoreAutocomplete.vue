@@ -1,5 +1,6 @@
 <template>
   <div class="store-autocomplete-wrapper form-group">
+    <label class="form-label">Search:</label>
     <div class="form-control-icon">
       <input
         placeholder="Search stores or cities"
@@ -87,7 +88,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Emit, Vue } from "vue-property-decorator";
+import { Component, Emit, Prop, Vue } from "vue-property-decorator";
 import _debounce from "lodash/debounce";
 import storeService from "@/services/store.service";
 import citiesService from "@/services/cities.service";
@@ -95,6 +96,8 @@ import { IStore } from "@/domain/store";
 
 @Component
 export default class StoreAutocomplete extends Vue {
+  @Prop() openUntil!: string;
+
   doSearchDebounced = _debounce(this.doSearch, 300);
   stores: string[] = [];
   cities: string[] = [];
@@ -126,7 +129,7 @@ export default class StoreAutocomplete extends Vue {
       this.typed = true;
 
       this.stores = storeService
-        .getStoresOrdered(true, "addressName", search)
+        .getStoresOrdered(true, "addressName", search, this.openUntil)
         .map((store: IStore) => store.addressName)
         .slice(0, this.resultsLimit);
 
@@ -188,13 +191,13 @@ export default class StoreAutocomplete extends Vue {
 .store-autocomplete-wrapper {
   @apply md:w-1/2
     lg:w-1/4
-    sm:w-full
+    w-full
     relative;
 
   .store-autocomplete-panel {
     @apply bg-white
       z-50
-    absolute
+      absolute
     px-4
     py-2
     rounded

@@ -3,9 +3,13 @@
 This project takes stores and cities data from a json file and renders them.
 
 On the stores page it is possible to search for them through a text field and 
-see their location on Google Maps.
+the store closing time, it's also possible to see their location on Google Maps.
 
-On the cities page it is possible to see the list of cities and sort them alphabetically.
+On the cities page it is possible to see the list of cities, sort them alphabetically,
+search the cities through a text field and look at the stores in that city through a 
+expansion panel in the city card.
+
+The project is also fully responsive.
 
 The project is running on [GitHub Pages](https://marcelobotega.github.io/jumbo-frontend-test/).
 
