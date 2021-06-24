@@ -58,4 +58,11 @@ describe("store.service.ts", () => {
     expect(stores[2].addressName).toEqual("Jumbo Nes (Ameland) Hoge Eggenweg");
     expect(stores).toHaveLength(3);
   });
+
+  it("should test getStoresByCity ", () => {
+    const stores = storeService.getStoresByCity("amstelveen");
+    expect(stores[0].addressName).toEqual("Jumbo Amstelveen Groenhof");
+    expect(stores[1].addressName).toEqual("Jumbo Amstelveen Veenbrink");
+    expect(stores).toHaveLength(2);
+  });
 });

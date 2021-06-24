@@ -18,26 +18,10 @@ exports[`CitiesList.vue should create component with cities list ASC 1`] = `
       </button>
     </div>
     <div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>A</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>B</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>C</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>D</p>
-        </div>
-      </div>
+      <citycard-stub city="A" class="mt-3"></citycard-stub>
+      <citycard-stub city="B" class="mt-3"></citycard-stub>
+      <citycard-stub city="C" class="mt-3"></citycard-stub>
+      <citycard-stub city="D" class="mt-3"></citycard-stub>
     </div>
   </div>
 </div>
@@ -87,16 +71,8 @@ exports[`CitiesList.vue should search and return results 1`] = `
       </button>
     </div>
     <div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>C</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>D</p>
-        </div>
-      </div>
+      <citycard-stub city="C" class="mt-3"></citycard-stub>
+      <citycard-stub city="D" class="mt-3"></citycard-stub>
     </div>
   </div>
 </div>
@@ -120,16 +96,8 @@ exports[`CitiesList.vue should search return results and sort items 1`] = `
       </button>
     </div>
     <div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>C</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>D</p>
-        </div>
-      </div>
+      <citycard-stub city="C" class="mt-3"></citycard-stub>
+      <citycard-stub city="D" class="mt-3"></citycard-stub>
     </div>
   </div>
 </div>
@@ -153,16 +121,8 @@ exports[`CitiesList.vue should search return results and sort items 2`] = `
       </button>
     </div>
     <div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>D</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>C</p>
-        </div>
-      </div>
+      <citycard-stub city="D" class="mt-3"></citycard-stub>
+      <citycard-stub city="C" class="mt-3"></citycard-stub>
     </div>
   </div>
 </div>
@@ -186,26 +146,10 @@ exports[`CitiesList.vue should toggle sort button 1`] = `
       </button>
     </div>
     <div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>D</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>C</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>B</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>A</p>
-        </div>
-      </div>
+      <citycard-stub city="D" class="mt-3"></citycard-stub>
+      <citycard-stub city="C" class="mt-3"></citycard-stub>
+      <citycard-stub city="B" class="mt-3"></citycard-stub>
+      <citycard-stub city="A" class="mt-3"></citycard-stub>
     </div>
   </div>
 </div>
@@ -229,26 +173,10 @@ exports[`CitiesList.vue should toggle sort button 2`] = `
       </button>
     </div>
     <div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>A</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>B</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>C</p>
-        </div>
-      </div>
-      <div class="card mt-3">
-        <div class="card-content">
-          <p>D</p>
-        </div>
-      </div>
+      <citycard-stub city="A" class="mt-3"></citycard-stub>
+      <citycard-stub city="B" class="mt-3"></citycard-stub>
+      <citycard-stub city="C" class="mt-3"></citycard-stub>
+      <citycard-stub city="D" class="mt-3"></citycard-stub>
     </div>
   </div>
 </div>

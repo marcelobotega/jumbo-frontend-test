@@ -27,6 +27,18 @@ class StoreService {
     return storesList;
   }
 
+  getStoresByCity(city: string): IStore[] {
+    const escapedSearch = UtilService.escapeRegexpCharacters(city);
+
+    return stores
+      .filter(
+        (item: IStore) => item.city.search(new RegExp(escapedSearch, "i")) > -1
+      )
+      .sort((a: IStore, b: IStore) =>
+        this.sortStores(a, b, "addressName", true)
+      );
+  }
+
   private sortStores(
     a: IStore,
     b: IStore,

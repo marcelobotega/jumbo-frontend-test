@@ -72,11 +72,12 @@
         </p>
       </div>
       <div v-else>
-        <div class="card mt-3" v-for="city in cities" :key="city">
-          <div class="card-content">
-            <p>{{ city }}</p>
-          </div>
-        </div>
+        <CityCard
+          class="mt-3"
+          v-for="city in cities"
+          :key="city"
+          :city="city"
+        ></CityCard>
       </div>
     </div>
   </div>
@@ -86,8 +87,10 @@
 import { Component, Vue } from "vue-property-decorator";
 import citiesService from "@/services/cities.service";
 import _debounce from "lodash/debounce";
-
-@Component
+import CityCard from "@/components/city-card/CityCard.vue";
+@Component({
+  components: { CityCard },
+})
 export default class CitiesList extends Vue {
   doSearchDebounced = _debounce(this.doSearch, 300);
   inputValue = "";
