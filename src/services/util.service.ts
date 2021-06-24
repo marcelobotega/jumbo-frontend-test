@@ -1,3 +1,5 @@
+import { IStore } from "@/domain/store";
+
 export class UtilService {
   static sortString(a: string, b: string, isAsc: boolean): number {
     if (isAsc) {
@@ -17,5 +19,9 @@ export class UtilService {
 
   static escapeRegexpCharacters(value: string): string {
     return value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  }
+
+  static isStoreOpen(item: IStore): boolean {
+    return item.todayClose !== "Gesloten";
   }
 }

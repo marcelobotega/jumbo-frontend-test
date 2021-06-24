@@ -1,0 +1,91 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`StoreOpenUntil.vue should create 1`] = `
+<div class="store-open-until form-group md:w-1/2 lg:w-1/4 w-full"><label class="form-label">Open until:</label> <select name="open-until" autocomplete="off" class="form-control">
+    <option value="">Select time</option>
+    <option value="18:00">
+      18:00
+    </option>
+    <option value="19:00">
+      19:00
+    </option>
+    <option value="20:00">
+      20:00
+    </option>
+    <option value="20:30">
+      20:30
+    </option>
+    <option value="21:00">
+      21:00
+    </option>
+    <option value="21:30">
+      21:30
+    </option>
+    <option value="22:00">
+      22:00
+    </option>
+    <option value="23:00">
+      23:00
+    </option>
+  </select></div>
+`;
+
+exports[`StoreOpenUntil.vue should emit value when change select 1`] = `
+<div class="store-open-until form-group md:w-1/2 lg:w-1/4 w-full"><label class="form-label">Open until:</label> <select name="open-until" autocomplete="off" class="form-control">
+    <option value="">Select time</option>
+    <option value="18:00">
+      18:00
+    </option>
+    <option value="19:00">
+      19:00
+    </option>
+    <option value="20:00">
+      20:00
+    </option>
+    <option value="20:30">
+      20:30
+    </option>
+    <option value="21:00">
+      21:00
+    </option>
+    <option value="21:30">
+      21:30
+    </option>
+    <option value="22:00">
+      22:00
+    </option>
+    <option value="23:00">
+      23:00
+    </option>
+  </select></div>
+`;
+
+exports[`StoreOpenUntil.vue should emit value when change select 2`] = `
+<div class="store-open-until form-group md:w-1/2 lg:w-1/4 w-full"><label class="form-label">Open until:</label> <select name="open-until" autocomplete="off" class="form-control">
+    <option value="">Select time</option>
+    <option value="18:00">
+      18:00
+    </option>
+    <option value="19:00">
+      19:00
+    </option>
+    <option value="20:00">
+      20:00
+    </option>
+    <option value="20:30">
+      20:30
+    </option>
+    <option value="21:00">
+      21:00
+    </option>
+    <option value="21:30">
+      21:30
+    </option>
+    <option value="22:00">
+      22:00
+    </option>
+    <option value="23:00">
+      23:00
+    </option>
+  </select></div>
+`;

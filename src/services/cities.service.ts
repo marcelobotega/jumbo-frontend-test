@@ -4,7 +4,11 @@ import { UtilService } from "@/services/util.service";
 
 class CitiesService {
   getCitiesOrdered(isAsc = true, search?: string): string[] {
-    let cities = Array.from(new Set(stores.map((item: IStore) => item.city)));
+    let cities = Array.from(
+      new Set(
+        stores.filter(UtilService.isStoreOpen).map((item: IStore) => item.city)
+      )
+    );
 
     if (search) {
       const escapedSearch = UtilService.escapeRegexpCharacters(search);

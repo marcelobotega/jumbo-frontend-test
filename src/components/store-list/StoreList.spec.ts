@@ -2,6 +2,7 @@ import { mount, Wrapper } from "@vue/test-utils";
 import StoreList from "@/components/store-list/StoreList.vue";
 import storesService from "@/services/store.service";
 import StoreAutocomplete from "@/components/store-autocomplete/StoreAutocomplete.vue";
+import StoreOpenUntil from "@/components/store-open-until/StoreOpenUntil.vue";
 
 const storeOneMock = {
   city: "St. Nicolaasga",
@@ -58,8 +59,8 @@ describe("StoreList.vue", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("should create test", async () => {
-    jest.resetAllMocks();
+  it("should do search", async () => {
+    jest.clearAllMocks();
     getStoresOrderedSpy.mockReturnValueOnce([storeTwoMock]);
 
     wrapper
@@ -71,7 +72,25 @@ describe("StoreList.vue", () => {
     expect(getStoresOrderedSpy).toHaveBeenCalledWith(
       true,
       "addressName",
-      "Jumbo St. Oedenrode Hertog Hendrikstraat"
+      "Jumbo St. Oedenrode Hertog Hendrikstraat",
+      ""
+    );
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it("should search with selected time", async () => {
+    jest.clearAllMocks();
+    getStoresOrderedSpy.mockReturnValueOnce([storeTwoMock]);
+
+    wrapper.findComponent(StoreOpenUntil).vm.$emit("selected-time", "21:00");
+
+    await wrapper.vm.$nextTick();
+    expect(getStoresOrderedSpy).toHaveBeenCalledTimes(1);
+    expect(getStoresOrderedSpy).toHaveBeenCalledWith(
+      true,
+      "addressName",
+      undefined,
+      "21:00"
     );
     expect(wrapper).toMatchSnapshot();
   });

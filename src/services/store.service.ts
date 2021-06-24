@@ -6,17 +6,27 @@ class StoreService {
   getStoresOrdered(
     isAsc = true,
     field: keyof IStore = "addressName",
-    search?: string
+    search?: string,
+    openUntil?: string
   ): IStore[] {
-    let storesList = stores;
+    let storesList = stores.filter(UtilService.isStoreOpen);
 
     if (search) {
       const escapedSearch = UtilService.escapeRegexpCharacters(search);
 
-      storesList = stores.filter(
+      storesList = storesList.filter(
         (item: IStore) =>
           item.addressName.search(new RegExp(escapedSearch, "i")) > -1 ||
           item.city.search(new RegExp(escapedSearch, "i")) > -1
+      );
+    }
+
+    if (openUntil) {
+      const escapedOpenUntil = UtilService.escapeRegexpCharacters(openUntil);
+
+      storesList = storesList.filter(
+        (item: IStore) =>
+          item.todayClose.search(new RegExp(escapedOpenUntil, "i")) > -1
       );
     }
 
@@ -25,6 +35,31 @@ class StoreService {
     );
 
     return storesList;
+  }
+
+  getStoresByCity(city: string): IStore[] {
+    const escapedSearch = UtilService.escapeRegexpCharacters(city);
+
+    return stores
+      .filter(
+        (item: IStore) =>
+          item.city.search(new RegExp(escapedSearch, "i")) > -1 &&
+          UtilService.isStoreOpen(item)
+      )
+      .sort((a: IStore, b: IStore) =>
+        this.sortStores(a, b, "addressName", true)
+      );
+  }
+
+  getStoresOpenUntilValues(): string[] {
+    return Array.from(
+      new Set(
+        stores
+          .filter(UtilService.isStoreOpen)
+          .map((item: IStore) => item.todayClose)
+          .sort()
+      )
+    );
   }
 
   private sortStores(

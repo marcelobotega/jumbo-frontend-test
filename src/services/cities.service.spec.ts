@@ -3,16 +3,16 @@ import citiesService from "@/services/cities.service";
 describe("cities.service.ts", () => {
   it("should test getCitiesOrdered ASC", () => {
     const citiesAsc = citiesService.getCitiesOrdered();
-    expect(citiesAsc[21]).toEqual("Assen");
-    expect(citiesAsc[27]).toEqual("Bathmen");
-    expect(citiesAsc).toHaveLength(406);
+    expect(citiesAsc[21]).toEqual("Baarle-Nassau");
+    expect(citiesAsc[27]).toEqual("Bedum");
+    expect(citiesAsc).toHaveLength(404);
   });
 
   it("should test getCitiesOrdered DESC", () => {
     const citiesAsc = citiesService.getCitiesOrdered(false);
     expect(citiesAsc[54]).toEqual("Vianen");
     expect(citiesAsc[23]).toEqual("Winssen");
-    expect(citiesAsc).toHaveLength(406);
+    expect(citiesAsc).toHaveLength(404);
   });
 
   it("should test getCitiesOrdered ASC with search param", () => {
@@ -29,5 +29,13 @@ describe("cities.service.ts", () => {
       "Nes (Ameland)",
     ]);
     expect(citiesOrdered).toHaveLength(3);
+  });
+
+  it("should test getCitiesOrdered without cities where all stores are closed", () => {
+    expect(
+      citiesService
+        .getCitiesOrdered()
+        .filter((item: string) => item === "Uithoorn")
+    ).toEqual([]);
   });
 });

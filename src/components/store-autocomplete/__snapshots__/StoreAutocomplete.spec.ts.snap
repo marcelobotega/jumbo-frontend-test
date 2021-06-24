@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`StoreAutocomplete.vue should create 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -12,7 +12,7 @@ exports[`StoreAutocomplete.vue should create 1`] = `
 `;
 
 exports[`StoreAutocomplete.vue should search and clean the input 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -39,11 +39,11 @@ exports[`StoreAutocomplete.vue should search and clean the input 1`] = `
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Alkmaar Winkelwaard
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
-          Jumbo Almelo Bornerbroeksestraat
-        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Almere Waterwijk Geinplein
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Almere-Buiten Detroitpad
+        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
+          Jumbo Almere-Haven Jaagmeent
         </a>
         <p class="text-sm font-semibold mt-1">
           Search limited to 10 stores. Refine search terms to make your search
@@ -62,8 +62,6 @@ exports[`StoreAutocomplete.vue should search and clean the input 1`] = `
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Alkmaar
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
-          Almelo
-        </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Almere
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Almere-Buiten
@@ -73,6 +71,8 @@ exports[`StoreAutocomplete.vue should search and clean the input 1`] = `
           Alphen aan den Rijn
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Dalfsen
+        </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
+          Lage Zwaluwe
         </a>
         <p class="text-sm font-semibold mt-1">
           Search limited to 10 cities. Refine search terms to make your search
@@ -85,7 +85,7 @@ exports[`StoreAutocomplete.vue should search and clean the input 1`] = `
 `;
 
 exports[`StoreAutocomplete.vue should search and clean the input 2`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -96,7 +96,7 @@ exports[`StoreAutocomplete.vue should search and clean the input 2`] = `
 `;
 
 exports[`StoreAutocomplete.vue should search and find no results 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -127,7 +127,7 @@ exports[`StoreAutocomplete.vue should search and find no results 1`] = `
 `;
 
 exports[`StoreAutocomplete.vue should search and find only stores 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -158,7 +158,7 @@ exports[`StoreAutocomplete.vue should search and find only stores 1`] = `
 `;
 
 exports[`StoreAutocomplete.vue should search and find stores and cities 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -207,7 +207,7 @@ exports[`StoreAutocomplete.vue should search and find stores and cities 1`] = `
 `;
 
 exports[`StoreAutocomplete.vue should search and more than 10 stores 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -259,7 +259,7 @@ exports[`StoreAutocomplete.vue should search and more than 10 stores 1`] = `
 `;
 
 exports[`StoreAutocomplete.vue should search and more than 10 stores and 10 cities 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -286,11 +286,11 @@ exports[`StoreAutocomplete.vue should search and more than 10 stores and 10 citi
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Alkmaar Winkelwaard
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
-          Jumbo Almelo Bornerbroeksestraat
-        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Almere Waterwijk Geinplein
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Almere-Buiten Detroitpad
+        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
+          Jumbo Almere-Haven Jaagmeent
         </a>
         <p class="text-sm font-semibold mt-1">
           Search limited to 10 stores. Refine search terms to make your search
@@ -309,8 +309,6 @@ exports[`StoreAutocomplete.vue should search and more than 10 stores and 10 citi
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Alkmaar
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
-          Almelo
-        </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Almere
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Almere-Buiten
@@ -320,6 +318,8 @@ exports[`StoreAutocomplete.vue should search and more than 10 stores and 10 citi
           Alphen aan den Rijn
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Dalfsen
+        </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
+          Lage Zwaluwe
         </a>
         <p class="text-sm font-semibold mt-1">
           Search limited to 10 cities. Refine search terms to make your search
@@ -332,7 +332,7 @@ exports[`StoreAutocomplete.vue should search and more than 10 stores and 10 citi
 `;
 
 exports[`StoreAutocomplete.vue should search and press enter to selected item on list 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -343,7 +343,7 @@ exports[`StoreAutocomplete.vue should search and press enter to selected item on
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in the list 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -380,7 +380,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in the list 2`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -417,7 +417,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in the list 3`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -454,7 +454,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in the list 4`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -491,7 +491,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in the list 5`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -528,7 +528,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in the list 6`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -565,7 +565,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in the list 7`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -602,7 +602,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.down to navigate in
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in the list 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -639,7 +639,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in t
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in the list 2`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -676,7 +676,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in t
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in the list 3`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -713,7 +713,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in t
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in the list 4`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -750,7 +750,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in t
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in the list 5`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -787,7 +787,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in t
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in the list 6`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -824,7 +824,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in t
 `;
 
 exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in the list 7`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -861,7 +861,7 @@ exports[`StoreAutocomplete.vue should search and use keydown.up to navigate in t
 `;
 
 exports[`StoreAutocomplete.vue should search anything and press enter 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -871,8 +871,47 @@ exports[`StoreAutocomplete.vue should search anything and press enter 1`] = `
 </div>
 `;
 
+exports[`StoreAutocomplete.vue should search with openUntil set 1`] = `
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
+  <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
+    <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+      </svg></div>
+  </div>
+  <div class="store-autocomplete-panel">
+    <p class="text-xs text-gray-500">
+      Use the up and down arrow keys to move the selection
+    </p>
+    <h4>Stores</h4>
+    <div class="ml-2">
+      <div><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100 bg-red-100">
+          Jumbo Amsterdam Baarsjesweg
+        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
+          Jumbo Amsterdam Buikslotermeerplein
+        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
+          Jumbo Amsterdam H. Jacobszstraat
+        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
+          Jumbo Amsterdam Westerstraat
+        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
+          Jumbo Arnhem Amsterdamseweg
+        </a>
+        <!---->
+      </div>
+    </div>
+    <h4 class="mt-1">Cities</h4>
+    <div class="ml-2">
+      <div><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
+          Amsterdam
+        </a>
+        <!---->
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
 exports[`StoreAutocomplete.vue should test click outside 1`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
@@ -899,11 +938,11 @@ exports[`StoreAutocomplete.vue should test click outside 1`] = `
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Alkmaar Winkelwaard
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
-          Jumbo Almelo Bornerbroeksestraat
-        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Almere Waterwijk Geinplein
         </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
           Jumbo Almere-Buiten Detroitpad
+        </a><a href="#" tabindex="0" class="block hover:bg-red-100 focus:bg-red-100">
+          Jumbo Almere-Haven Jaagmeent
         </a>
         <p class="text-sm font-semibold mt-1">
           Search limited to 10 stores. Refine search terms to make your search
@@ -922,8 +961,6 @@ exports[`StoreAutocomplete.vue should test click outside 1`] = `
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Alkmaar
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
-          Almelo
-        </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Almere
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Almere-Buiten
@@ -933,6 +970,8 @@ exports[`StoreAutocomplete.vue should test click outside 1`] = `
           Alphen aan den Rijn
         </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
           Dalfsen
+        </a><a href="#" tabindex="0" class="block hover:bg-green-100 focus:bg-green-100">
+          Lage Zwaluwe
         </a>
         <p class="text-sm font-semibold mt-1">
           Search limited to 10 cities. Refine search terms to make your search
@@ -945,7 +984,7 @@ exports[`StoreAutocomplete.vue should test click outside 1`] = `
 `;
 
 exports[`StoreAutocomplete.vue should test click outside 2`] = `
-<div class="store-autocomplete-wrapper form-group">
+<div class="store-autocomplete-wrapper form-group"><label class="form-label">Search:</label>
   <div class="form-control-icon"><input placeholder="Search stores or cities" type="text" name="search" autocomplete="off" class="form-control">
     <div class="form-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
         <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>

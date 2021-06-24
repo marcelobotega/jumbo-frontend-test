@@ -197,4 +197,12 @@ describe("StoreAutocomplete.vue", () => {
       "item-selected": [["", ""]],
     });
   });
+
+  it("should search with openUntil set", async () => {
+    await wrapper.setData({ inputValue: "amsterdam" });
+    await wrapper.setProps({ openUntil: "21:00" });
+    await searchInput.trigger("input");
+    await wrapper.vm.$nextTick();
+    expect(wrapper).toMatchSnapshot();
+  });
 });

@@ -1,40 +1,42 @@
 import storeService from "@/services/store.service";
+import { IStore } from "@/domain/store";
 
 describe("store.service.ts", () => {
   it("should test getStoresOrdered ASC", () => {
     const stores = storeService.getStoresOrdered();
-    expect(stores[21].addressName).toEqual("Jumbo Amersfoort Vathorst");
-    expect(stores[400].addressName).toEqual("Jumbo Nieuwe Niedorp Trambaan");
-    expect(stores).toHaveLength(674);
+    expect(stores[21].addressName).toEqual("Jumbo Amersfoort Wiekslag");
+    expect(stores[400].addressName).toEqual(
+      "Jumbo Nieuwerkerk ad IJssel Reigerhof"
+    );
+    expect(stores).toHaveLength(667);
   });
 
   it("should test getStoresOrdered DESC", () => {
     const stores = storeService.getStoresOrdered(false);
     expect(stores[21].addressName).toEqual("Jumbo Zoetermeer Kentgensplein");
-    expect(stores[400].addressName).toEqual("Jumbo Heerhugowaard Centrumwaard");
-    expect(stores).toHaveLength(674);
+    expect(stores[400].addressName).toEqual("Jumbo Heemskerk Haydnplein");
+    expect(stores).toHaveLength(667);
   });
+
   it("should test getStoresOrdered ASC with field city", () => {
     const stores = storeService.getStoresOrdered(true, "city");
-    expect(stores[21].addressName).toEqual(
-      "Jumbo Amersfoort Den Blanken Nieuwland"
-    );
-    expect(stores[400].addressName).toEqual("Jumbo Nieuwe Niedorp Trambaan");
-    expect(stores).toHaveLength(674);
+    expect(stores[21].addressName).toEqual("Jumbo Amersfoort Wiekslag");
+    expect(stores[400].addressName).toEqual("Jumbo Nieuwerkerk Schot");
+    expect(stores).toHaveLength(667);
   });
 
   it("should test getStoresOrdered ASC with field sundayOpen", () => {
     const stores = storeService.getStoresOrdered(true, "sundayOpen");
-    expect(stores[21].addressName).toEqual("Jumbo Putten Postweg");
-    expect(stores[400].addressName).toEqual("Jumbo Houten Spoorhaag");
-    expect(stores).toHaveLength(674);
+    expect(stores[21].addressName).toEqual("Jumbo St. Willebrord Kievitstraat");
+    expect(stores[400].addressName).toEqual("Jumbo Gemert Past.Poellplein");
+    expect(stores).toHaveLength(667);
   });
 
   it("should test getStoresOrdered DESC with field sundayOpen", () => {
     const stores = storeService.getStoresOrdered(false, "sundayOpen");
-    expect(stores[21].addressName).toEqual("Jumbo Budel Jumbo Hesselberth");
-    expect(stores[400].addressName).toEqual("Jumbo Vlijmen Oliemaat");
-    expect(stores).toHaveLength(674);
+    expect(stores[21].addressName).toEqual("Jumbo St. Willebrord Kievitstraat");
+    expect(stores[400].addressName).toEqual("Jumbo Gemert Past.Poellplein");
+    expect(stores).toHaveLength(667);
   });
 
   it("should test getStoresOrdered ASC with search param", () => {
@@ -57,5 +59,36 @@ describe("store.service.ts", () => {
     expect(stores[1].addressName).toEqual("Jumbo Den Burg (Texel) Den Burg");
     expect(stores[2].addressName).toEqual("Jumbo Nes (Ameland) Hoge Eggenweg");
     expect(stores).toHaveLength(3);
+  });
+
+  it("should test getStoresByCity ", () => {
+    const stores = storeService.getStoresByCity("amstelveen");
+    expect(stores[0].addressName).toEqual("Jumbo Amstelveen Groenhof");
+    expect(stores[1].addressName).toEqual("Jumbo Amstelveen Veenbrink");
+    expect(stores).toHaveLength(2);
+  });
+
+  it("should test getStoresOrdered without stores closed", () => {
+    expect(
+      storeService
+        .getStoresOrdered()
+        .filter((store: IStore) => store.todayClose === "Gesloten")
+    ).toEqual([]);
+  });
+
+  it("should test getStoresByCity without stores closed", () => {
+    expect(
+      storeService
+        .getStoresByCity("Almelo")
+        .filter((store: IStore) => store.todayClose === "Gesloten")
+    ).toEqual([]);
+  });
+
+  it("should test getStoresOpenUntilValues without stores closed", () => {
+    expect(
+      storeService
+        .getStoresOpenUntilValues()
+        .filter((item: string) => item === "Gesloten")
+    ).toEqual([]);
   });
 });

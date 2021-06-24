@@ -1,4 +1,5 @@
 import { UtilService } from "@/services/util.service";
+import stores from "@/data/stores-data";
 
 const stringListMock = ["C", "D", "A", "B"];
 const booleanListMock = [true, false, false, true];
@@ -44,5 +45,10 @@ describe("util.service.ts", () => {
     ).toEqual(
       "\\.\\*\\+this\\?\\^string\\$\\{makes\\}no\\(\\)sense\\|at\\[all\\]"
     );
+  });
+
+  it("should test isStoreOpen ", () => {
+    expect(UtilService.isStoreOpen(stores[10])).toBeFalsy();
+    expect(UtilService.isStoreOpen(stores[15])).toBeTruthy();
   });
 });
